@@ -1,0 +1,29 @@
+{
+  "intent": {
+    "name": "name of the intent",
+    "user": {
+      "id": "id if needed",
+      "session": "session id if needed",
+      "first_name": "first name of the user ",
+      "last_name": "last name of the user",
+      "email": "username email",
+      "timezone": "America/New_York",
+      "locale": "en-US",
+      "security": {
+        "jwt-token": ""
+      }
+    },
+    "contexts": {
+      "intent": "",
+      "message": "",
+      "parameters": {}
+    },
+    "request": {
+      "type": "message",
+      "message": "content of the message",
+      "parameters": {}
+    },
+    "responses": []
+  },
+  "lang": "en"
+}

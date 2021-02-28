@@ -1,0 +1,191 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1614550937.json",
+  "title": "Root",
+  "type": "object",
+  "required": ["intent", "lang"],
+  "properties": {
+    "intent": {
+      "$id": "#root/intent",
+      "title": "Intent",
+      "type": "object",
+      "required": ["name", "user", "contexts", "request", "responses"],
+      "properties": {
+        "name": {
+          "$id": "#root/intent/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "examples": ["name of the intent"],
+          "pattern": "^.*$"
+        },
+        "user": {
+          "$id": "#root/intent/user",
+          "title": "User",
+          "type": "object",
+          "required": [
+            "id",
+            "session",
+            "first_name",
+            "last_name",
+            "email",
+            "timezone",
+            "locale",
+            "security"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#root/intent/user/id",
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "examples": ["id if needed"],
+              "pattern": "^.*$"
+            },
+            "session": {
+              "$id": "#root/intent/user/session",
+              "title": "Session",
+              "type": "string",
+              "default": "",
+              "examples": ["session id if needed"],
+              "pattern": "^.*$"
+            },
+            "first_name": {
+              "$id": "#root/intent/user/first_name",
+              "title": "First_name",
+              "type": "string",
+              "default": "",
+              "examples": ["first name of the user "],
+              "pattern": "^.*$"
+            },
+            "last_name": {
+              "$id": "#root/intent/user/last_name",
+              "title": "Last_name",
+              "type": "string",
+              "default": "",
+              "examples": ["last name of the user"],
+              "pattern": "^.*$"
+            },
+            "email": {
+              "$id": "#root/intent/user/email",
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "examples": ["username email"],
+              "pattern": "^.*$"
+            },
+            "timezone": {
+              "$id": "#root/intent/user/timezone",
+              "title": "Timezone",
+              "type": "string",
+              "default": "",
+              "examples": ["America/New_York"],
+              "pattern": "^.*$"
+            },
+            "locale": {
+              "$id": "#root/intent/user/locale",
+              "title": "Locale",
+              "type": "string",
+              "default": "",
+              "examples": ["en-US"],
+              "pattern": "^.*$"
+            },
+            "security": {
+              "$id": "#root/intent/user/security",
+              "title": "Security",
+              "type": "object",
+              "required": ["jwt-token"],
+              "properties": {
+                "jwt-token": {
+                  "$id": "#root/intent/user/security/jwt-token",
+                  "title": "Jwt-token",
+                  "type": "string",
+                  "default": "",
+                  "examples": [""],
+                  "pattern": "^.*$"
+                }
+              }
+            }
+          }
+        },
+        "contexts": {
+          "$id": "#root/intent/contexts",
+          "title": "Contexts",
+          "type": "object",
+          "required": ["intent", "message", "parameters"],
+          "properties": {
+            "intent": {
+              "$id": "#root/intent/contexts/intent",
+              "title": "Intent",
+              "type": "string",
+              "default": "",
+              "examples": [""],
+              "pattern": "^.*$"
+            },
+            "message": {
+              "$id": "#root/intent/contexts/message",
+              "title": "Message",
+              "type": "string",
+              "default": "",
+              "examples": [""],
+              "pattern": "^.*$"
+            },
+            "parameters": {
+              "$id": "#root/intent/contexts/parameters",
+              "title": "Parameters",
+              "type": "object",
+              "required": [],
+              "properties": {}
+            }
+          }
+        },
+        "request": {
+          "$id": "#root/intent/request",
+          "title": "Request",
+          "type": "object",
+          "required": ["type", "message", "parameters"],
+          "properties": {
+            "type": {
+              "$id": "#root/intent/request/type",
+              "title": "Type",
+              "type": "string",
+              "default": "",
+              "examples": ["message"],
+              "pattern": "^.*$"
+            },
+            "message": {
+              "$id": "#root/intent/request/message",
+              "title": "Message",
+              "type": "string",
+              "default": "",
+              "examples": ["content of the message"],
+              "pattern": "^.*$"
+            },
+            "parameters": {
+              "$id": "#root/intent/request/parameters",
+              "title": "Parameters",
+              "type": "object",
+              "required": [],
+              "properties": {}
+            }
+          }
+        },
+        "responses": {
+          "$id": "#root/intent/responses",
+          "title": "Responses",
+          "type": "array",
+          "default": []
+        }
+      }
+    },
+    "lang": {
+      "$id": "#root/lang",
+      "title": "Lang",
+      "type": "string",
+      "default": "",
+      "examples": ["en"],
+      "pattern": "^.*$"
+    }
+  }
+}
