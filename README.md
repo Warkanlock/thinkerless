@@ -2,14 +2,19 @@
 
 ![Logo](https://github.com/Warkanlock/thinkerless/blob/main/docs/branding/cover.png)
 
+### What's Thinkerless?
+
+Is a dynamic serverless endpoint generator that contain **security**, **validation**, **multiple contexts**. All of this built-in as an Azure Function, that help us to build an endpoint with no more than a extension file. This idea provide flexibility and easy maintainability in terms of CI/CD endpoint generation without worry in terms of scalability.
+
+In order to replicate and start using this framework you have to clone the content from the intent-handler or example-handler folder and **modify it according to your needs**
+
 ### Features
 
-- built-in security
-- auto scale functionality
-- no code to maintain, only extension handlers
-- validation schema based on a global object
-
-In order to replicate the azure functions to have multiple intent handlers you have to clone the content from the intent-handler folder and **modify it according to your needs**
+- **Built-in security**
+- **Auto-scale functionality**: Auto-create endpoints using a CI/CD pipeline on each PR refering to a resource group.
+- **No code to maintain, only extension handlers**: You don't need to worry on validation, security and other issues. Only thing needed it's an extension file.
+- **Global validation schema**: Only file to rule them all.
+- **Easy cross-team maintaince:** Each team could work on each extension handler, without need to worry about other changes.
 
 ### Installation
 
