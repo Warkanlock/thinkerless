@@ -4,7 +4,7 @@
 
 ### What's Thinkerless?
 
-Is a dynamic serverless endpoint generator that contain **security**, **validation**, **multiple contexts**. All of this built-in as an Azure Function, that help us to build an endpoint with no more than a extension file. This idea provide flexibility and easy maintainability in terms of CI/CD endpoint generation without worry in terms of scalability.
+Is a dynamic endpoint generator that contain **security**, **validation**, **multiple contexts**. All of this built-in as an Azure Function, that help us to build an endpoint with no more than a extension file. This idea provide flexibility and easy maintainability in terms of CI/CD endpoint generation without worry in terms of scalability.
 
 In order to replicate and start using this framework you have to clone the content from the intent-handler or example-handler folder and **modify it according to your needs**
 
